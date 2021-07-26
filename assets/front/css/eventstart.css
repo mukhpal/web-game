@@ -1,0 +1,48 @@
+/* Event start special CSS */
+body{
+    overflow-x: hidden;
+}
+.toast.show {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    transform: translate(0px, 0px);
+    transition: all ease-in-out 0.5s;
+}
+
+.toast{
+transform: translate(350px, 0px);
+    transition: all ease-in-out 0.5s;
+	 opacity: 1 !important;
+    display: block !important;
+    transition: all ease-in-out 0.5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.toast-header .close {
+    text-shadow: none;
+}
+.toast-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .2rem .75em;
+    color: #000000;
+    background-color: rgb(192 144 46);
+    background-clip: padding-box;
+    border-bottom: 0;
+}
+.toast-header .text-primary {
+    color: #000 !important;
+}
+.toast-header .text-muted {
+    color: #000 !important;
+}
+.toast-body {
+    padding: .75rem;
+    background: #d5ab6a;
+    color: #000;
+}

@@ -1,0 +1,57 @@
+.gallery_evidence {position:absolute; top:0; left:0; height: 100%; padding:5% 7%; width:100%; z-index:11; display:flex; flex-wrap:wrap;}
+.gallery-item {max-width:33.33%; padding:25px 25px 0;width: inherit;}
+.gallery-item a {display:block;    text-align: center;}
+.gallery-item a:hover {
+	transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+}
+.gallery_evidence .gallery-item a img{height: 200px; object-fit: contain;}
+.gallery-item.lamps img{width: 90%;}
+.evidence_sec:after {
+	content:'';
+	background-image:url(../images/gallery/usb_drive.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:absolute;
+	right: 8%;
+    bottom: -2%;
+    padding: 47px 60px;
+	z-index:11;
+} 
+.profile_pin_evediance {
+    position: absolute;
+    width: 5%;
+    top: 1px;
+    right: 6%;
+    z-index: 1;
+}
+/**police report***/
+#ninja-slider ul.police_detail{border: 1px solid #000;columns: 2;-webkit-columns: 2;-moz-columns: 2; margin-top: 10px;}
+#ninja-slider .police_detail li { font-weight: 500;
+    margin-bottom: 0px !important; position: relative !important; font-size: 13px; color: #000;opacity: 1;text-align: left;
+	padding: 10px 10px;}
+	.police_data{margin-bottom: 10px;}
+.police_data p{border: 1px solid #000; text-align: left; padding: 5px; margin-bottom: 0;    font-size: 16px;}
+.news-article .view_btn{padding: 10px 25px;box-shadow: inset 0px 0px 7px 0px #083050;border-radius: 10px;}
+.news-article .contact_btn{min-width: 130px;}
+@media (max-width:767px){
+.gallery-item {max-width:50%; padding:25px 5px 0;}
+.evidence_sec .cover_rht, .evidence_sec .sticky_note_top{display:none;}
+.evidence_sec:before {
+	display:none;
+}
+}
+.modal {
+    background: rgba(0, 0, 0, 0.7);
+}
+div#found_corridor .close {
+    opacity: 1;
+    width: 50px;
+}
+.search_mansion {
+    transform: rotate(3deg);
+}
+.catch_theif {
+    transform: rotate(-3deg);
+}

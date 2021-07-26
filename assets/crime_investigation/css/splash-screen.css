@@ -1,0 +1,6 @@
+.splash_screen {width:100%; text-align:center;}
+.logo_splash  {max-width:50%; display: inline-block;}
+
+@media (max-width:767px){
+.logo_splash  {max-width:80%;}
+}

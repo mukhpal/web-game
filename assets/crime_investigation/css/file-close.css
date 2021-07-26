@@ -1,0 +1,29 @@
+.file_case {position:relative; }
+.file_note {width:40%; text-align:center;}
+.file_closed .main_menu {right:-70px; z-index:1;}
+.file_front {position:absolute; top:0; left:0; z-index:1;}
+.book_coverht img {
+    max-width: inherit;
+}
+.book_coverht {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+@media (min-width:1441px){
+.file_case {width: 56%;}
+}
+
+@media (max-width:1440px){
+.file_case {width: 54%;}
+.file_closed .main_menu {top:80px;}
+.file_note img{max-width:260px;}
+}
+
+@media (max-width:767px){
+.file_case {width:90%;}	
+.file_note {width:55%;}
+.file_note img {max-width:100%;}
+.file_closed {flex-direction: column-reverse!important;}
+}

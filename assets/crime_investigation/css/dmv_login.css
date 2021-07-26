@@ -1,0 +1,50 @@
+.vehicle_login .batch_logo img {max-width: 150px;}
+.vehicle_login .batch_logo {text-align: center;margin-bottom: 20px;}
+.vehicle_form {display: flex;align-items: center; justify-content: center;flex-direction: column;height: 100%; text-align: center;}
+.vehicle_form{text-transform: uppercase}
+.vehicle_form label{color: #fff;}
+.vehicle_login form{width: 100%;}
+.vehicle_login .vehicle_form input::placeholder {
+  color: #b2b2b2;
+  opacity: 0.7; /* Firefox */
+}
+
+.vehicle_login .vehicle_form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #b2b2b2;
+}
+
+.vehicle_login .vehicle_form input::-ms-input-placeholder { /* Microsoft Edge */
+ color: #b2b2b2;
+}
+.vehicle_login .vehicle_form input{text-align: center;
+  color: #ffffff !important;
+  background: #1e4daa;
+  font-family: Arial;
+  border: 0;
+  box-shadow: inset 30px 30px 56px 14px #1c4494; }
+  .vehicle_login .vehicle_form button{background: #00b026; box-shadow: 0px 2px 0px 3px #006715; }
+  .vehicle_login .vehicle_form button:focus, .vehicle_login .vehicle_form button:hover{background: rgb(0 176 38 / 74%);}
+  .vehicle_login .vehicle_form input[type="text"]:focus {
+  color: #ffffff;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #1e4daa;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: #1e4daa;
+}
+.vehicle_login .vehicle_form input:focus {
+  background-color: #1e4daa !important;
+  opacity: 1.0;
+  box-shadow: 0px 0px 0px 0px #1e4daa;
+  color: #ffffff;
+}

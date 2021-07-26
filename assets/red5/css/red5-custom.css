@@ -1,0 +1,170 @@
+.joined_member li figure img {height: auto; width:100%; display:inline-block;}
+.joined_member h5 {font-size: 16px; color:rgb(27, 55, 75); font-weight: 500;}
+.joined_member ul {margin:0;}
+.joined_member li {display: inline-block;  text-align: center; margin:0 5px; border-radius:100%;max-width: 130px; }
+.joined_member li figure { display: inline-block; background: #fff; border-radius: 115px; width: 115px; height: 115px; line-height: 112px; margin:5px; overflow: hidden;}
+.joined_member li h6 { color: #3a00b7; font-size: 1rem; font-weight: 700; text-overflow: ellipsis; overflow: hidden; }
+.joined_member p {margin:10px 0 0; color:#ff0c0c;}
+
+.members-streaming {position:fixed; top:0; right:0; margin: 0; padding: 10px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2b098a+1,23086e+89&0+2,0.65+86 */
+background: -moz-linear-gradient(-45deg, rgba(43,9,138,0) 1%, rgba(43,9,138,0) 2%, rgba(35,8,111,0.65) 86%, rgba(35,8,110,0.65) 89%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(43,9,138,0) 1%,rgba(43,9,138,0) 2%,rgba(35,8,111,0.65) 86%,rgba(35,8,110,0.65) 89%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(43,9,138,0) 1%,rgba(43,9,138,0) 2%,rgba(35,8,111,0.65) 86%,rgba(35,8,110,0.65) 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002b098a', endColorstr='#a623086e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.members-streaming li { min-width: 100px;position:relative; display: inline-block; text-align: center; margin: 10px 8px; border-radius: 100%; max-width:220px;} 
+.members-streaming li figure {position:relative; display: inline-block; background: #fff; border-radius: 105px; width: 85px; height: 85px; line-height: 82px; margin:0 0 5px; 
+  /*overflow: hidden;*/
+  z-index:1;}
+/*.mmrulscreen .members-streaming {right: auto; left: 0;}
+.mmrulscreen .members-streaming ul li{display: block;}*/
+.members-streaming li figure video {z-index:0;}
+.members-streaming li figure img {width:auto; height:100%;}
+.members-streaming li h6 {color: #fff; font-size: 1rem; font-weight: 700; display:block; margin-top: 0; text-overflow: ellipsis; overflow:hidden;}
+.members-streaming .vd-wrap {width:100%;}
+.members-streaming .vd-wrap video {width:100%; height: 100%; transform: scale(1.9); -webkit-transform: scale(1.9);}
+
+#aw_joined_users .btn-toggle.active {
+    background-color:#3a00b7;
+}
+#aw_joined_users .btn-toggle {
+  margin: 0 0; background-color:#3a00b7;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 14px;
+  width: 2.5rem;
+  border-radius: 1rem;
+}
+#aw_joined_users .btn-toggle.btn-xs:focus,
+#aw_joined_users .btn-toggle.btn-xs.focus,
+#aw_joined_users .btn-toggle.btn-xs:focus.active,
+#aw_joined_users .btn-toggle.btn-xs.focus.active {
+  outline: none;
+}
+#aw_joined_users .btn-toggle.btn-xs:before,
+#aw_joined_users .btn-toggle.btn-xs:after {
+  line-height: 1rem;
+  width: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+#aw_joined_users .btn-toggle.btn-xs:before {
+  content: 'Off';
+  left: 0;
+}
+#aw_joined_users .btn-toggle.btn-xs:after {
+  content: 'On';
+  right: 0;
+  opacity: 0.5;
+}
+#aw_joined_users .btn-toggle.btn-xs > .handle {
+  position: absolute;
+  top:-9px;
+  left:-0.600rem;
+  width: 30px;
+  height: 30px;
+  border-radius:2rem;
+  background-color: #ffffff; 
+  background-image:url(../../front/images/icons/vid_icon.png);
+  background-repeat:no-repeat;
+  background-size: 15px;
+  background-position: center;
+  transition: left 0.25s;
+  -webkit-transition: left 0.25s; 
+}
+#aw_joined_users .btn-toggle.btn-xs.active > .handle{
+  background-image:url(../../front/images/icons/vid_icon1.png)!important;
+}
+#aw_joined_users .btn-toggle.btn-xs.active {
+  
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  filter:none;
+}
+#aw_joined_users .btn-toggle.btn-xs.active > .handle {
+  left: 1.395rem;
+  transition: left 0.25s;
+  -webkit-transition: left 0.25s;
+}
+#aw_joined_users .btn-toggle.btn-xs.active:before {
+  opacity: 0.5;
+}
+#aw_joined_users .btn-toggle.btn-xs.active:after {
+  opacity: 1;
+}
+#aw_joined_users .btn-toggle.btn-xs.btn-xs:before,
+#aw_joined_users .btn-toggle.btn-xs.btn-xs:after {
+  display: none;
+}
+#aw_joined_users .btn-toggle.btn-secondary {
+  color: #6b7381;
+  background: #bdc1c8;
+}
+#aw_joined_users .btn-toggle.btn-secondary:before,
+#aw_joined_users .btn-toggle.btn-secondary:after {
+  color: #6b7381;
+}
+#aw_joined_users .btn-toggle.btn-secondary.active {
+  background-color: #ff8300;
+}
+
+.mmrulscreen .members-streaming{
+	right: auto; left: 0;
+}
+.mmrulscreen .members-streaming ul{padding-left: 0;}
+.video-wraps.joined_member {position: fixed; top:0; right:0;}
+#aw_joined_users button#join-button { z-index:1; position: absolute;left: 0;right: 0;top: 0;transform: translate(24px, 60px); display:none; cursor:pointer; }
+/*#aw_joined_users .vd-wrap{display:inline-block;}*/
+#aw_joined_users .hidden{display:none;}
+.mmrulscreen .cap_video.hidden { display: block !important;}
+#aw_joined_users video{width:100%;vertical-align:middle;}
+#joined_users button#join-button{ display:none;  }
+#joined_users .vd-wrap{ display:none;  }
+
+.mmrulscreen .members-streaming li {
+    margin: 8px;
+    display: block;
+    max-width: 150px;
+    position: relative;
+}
+
+.mmrulescreen .members-streaming {
+    background: linear-gradient(135deg, rgba(43,9,138,0) 1%,rgba(43,9,138,0) 2%,rgba(35,8,111,0.65) 86%,rgba(35,8,110,0.65) 89%);
+}
+
+.video-wraps.joined_member .members-streaming, .video-wraps.joined_member.mmrulscreen .members-streaming {
+    background: transparent;
+}
+
+/** orientation : landscape **/
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 1024px) 
+                   and (orientation: landscape) {
+  .joined_member li.disabled {
+    /*background: #ababab;*/
+   margin: 10px 5px 0; }
+}
+
+.mmrulscreen .members-streaming ul { overflow:hidden; overflow-y: auto; height: 100vh;  }
+.cab-add li h6{width: 100px; text-overflow: ellipsis; overflow: hidden;}
+.cap_video img{width: 100%;}
+.cap_video {position: absolute; right: 0; z-index: 9;margin: 0 auto; text-align: center; width: 90px;}
+.members-streaming .cab-add .cap_video{ display: none; }
+.mmrulscreen .members-streaming .cab-add .cap_video{ display: block }
+.mmrulscreen .members-streaming .cab-add li{padding-top: 30px;}
+.cap_video.cap1{left: -5px;top: 12px;}
+.cap_video.cap2{left: 17px; top: 4px;}
+.cap_video.cap3{left: -15px;top: 9px;}
+.cap_video.cap4{left: 10px; top: 8px;}
+.cap_video.cap5{left: 12px; top: 8px;}
+.cap_video.cap6{left: -26px; top: 4px;}
+
+

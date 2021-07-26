@@ -1,0 +1,86 @@
+.result_detail {background: url(../images/result-screen/pattren_bg.png) no-repeat center;background-size: 100% 100%; padding: 20px 30px;
+    box-shadow: 0px 8px 16.56px 1.44px rgba(0, 0, 0, 0.42);z-index: 11;display: flex;transform: rotate(4deg);border-radius: 5px;width: calc(100% - 15%);margin: auto;}
+.cover_full {background: #c0902e;position: relative;top: 0;bottom :0; right: 0;left: 0;height: 100%;width: 100%;margin: 0 auto;box-shadow: 0px 8px 16.56px 1.44px rgba(0, 0, 0, 0.42);z-index: 11;display: flex;transform: rotate(-6deg);border-radius: 7px;}
+.cover_full:before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: calc(100% - 10%);
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(7deg);
+    border-radius: 5px;
+    margin: auto;
+}
+.result_screen{  text-align: center;width: 100%;}
+.result_detail img{max-width: 150px;}
+.result_detail .modal-header, .result_detail .modal-footer, .result_detail .modal-body {padding: 0;border: 0;}
+.case_title {color: #e9a623;text-transform: uppercase;font-weight: 700;text-shadow: 0px 2px 5px rgb(0 0 0 / 38%);	width: 100%;letter-spacing: 2px;}
+.case_det img{max-width: 100%;}
+.case_det.case_solved img, .case_det.case_solved img{max-width: 70%;}
+.case_det.case_solved img{margin-top: 15px;}
+.trophy img{width: 150px;}
+.stars img{width: 100px;}
+.single_star img{width: 70px;}
+.trophy {position: absolute;top: -10%;z-index: 111;left: 2%;}
+.single_star{position: absolute;top: -14px;z-index: 111;right: 44px;}
+.stars{position: absolute; bottom: -3%; z-index: 111;left: 3%;}
+.player_list .player_img img{width: 75px; height: 80px;object-fit: cover; object-position: top; border: 1px solid #38373b; border-radius: 5px;filter: drop-shadow(0px 0px 10px #c2c2c2); -webkit-filter: drop-shadow(0px 0px 10px #c2c2c2); -moz-filter: drop-shadow(0px 0px 10px #c2c2c2); }
+.player_list{text-align: center;}
+.view_result{display: inline-block;}
+.view_result img{max-width: 150px;}
+.result_detail .player_list li h5, .player_title h3{    padding: 10px 0;
+    margin-bottom: 10px;color: #044874; font-weight: 700;text-transform: uppercase;}
+div#result_view{background-color: rgba(0, 0, 0, 0.7);}
+.result_view {
+        background: url(../images/gallery/model_good.png) no-repeat center;
+        background-size: 100% 100%;
+        padding: 20px 30px;
+        z-index: 11;
+        border:0;
+        display: flex;
+        transform: rotate(-4deg);
+        margin: auto;
+        background-color: transparent;
+        min-width: 350px;
+        max-width: 450px;
+        width: 100%;
+}
+.result_view h6 {
+    line-height: 1.5;
+}
+.cover_bg{margin: auto;}
+.result_detail a>img{
+    max-width: 150px;
+}
+@media(min-width: 1200px){
+    .case_title{font-size: 42px;}
+}
+@media(max-width: 1024px){
+    .player_list .player_img img{ width: 100%; height: auto; }
+.view_result img {max-width: 100px;}
+.trophy img{width: 100px;}
+.case_det img {
+    max-width: 180px;
+}
+}
+@media(min-width: 575px){
+    .result_view{
+        max-width: 450px; 
+    }
+}
+ /***evidence Detail popup***/
+.evidence_detail {background: url(../images/gallery/evidence_bg.png) no-repeat center;background-size: 100% 100%; padding: 20px 30px; box-shadow: none;z-index: 11;display: flex;border-radius: 5px;width: calc(100% - 15%);margin: auto;border:0;}
+.new_evidence{font-size: 3rem; text-align: center; color: white;}
+#found_gloves {background: rgba(0, 0, 0, 0.8);}
+.evidence_detail .player_title h4{font-weight: 500; text-transform: inherit;padding: 10px 0;margin-bottom: 10px;}
+.button_cross{position: fixed; right: 16px; top: 6px; border-bottom: 0; display: block;}
+.modal-header.button_cross button { padding: 0px; margin: 0px;}
+ /***Take FingerPrint popup***/
+#prnt_fingr { background: rgba(0, 0, 0, 0.7);}
+.modal-content.evidence_detail.no_background{
+    background-image: none;
+}

@@ -1,0 +1,177 @@
+.number_list {margin:0 0 15px;}
+.number_list h6 {margin:0; font-size:16px;    text-transform: capitalize;}
+.number_list ul {list-style: none; counter-reset: my-awesome-counter;}
+.number_list li {counter-increment: my-awesome-counter;}
+.number_list li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #000000; 
+}
+.qus_items .submit_btn {display: inline-block;cursor: pointer;}
+.qus_items .submit_btn img{width: 80px;margin-top: 10px;}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text{width: 100%; margin-right: 0 !important;}
+.disabledbutton{
+  pointer-events: none;
+  opacity: 0.4;
+  user-select: none;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+ 
+}
+.disabledbutton.blur{
+  filter: blur(3px);
+
+} 
+.bootstrap-select .dropdown-menu{
+  background-color: #cbaa65;
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder, .bootstrap-select>.dropdown-toggle.bs-placeholder:active, .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+  color: #000 !important;
+  height: 30px;
+  padding-right: 0 15px 0 0;
+}
+#crime_investigation .bootstrap-select .dropdown-toggle:focus{outline: none!important; box-shadow: none!important;}
+.dropdown-menu.open.show ul.dropdown-menu.inner {
+  display: block;
+}
+.bootstrap-select>.dropdown-toggle {
+  padding: 0 25px 0 0;
+}
+.bootstrap-select.btn-group .dropdown-menu li{padding: 0 10px;}
+.bootstrap-select.btn-group .dropdown-menu li.selected, .bootstrap-select.btn-group .dropdown-menu li:hover{background-color: #1e90ff;}
+.bootstrap-select.btn-group .dropdown-menu li.selected a,  .bootstrap-select.btn-group .dropdown-menu li:hover a{color: #fff;}
+.qus_ans_sec{    padding-right: 10px;
+  height: calc(100% - 15%);
+  overflow-y: auto;}
+  .qus_ans_sec select{width: 90%;}
+  .qus_ans_sec .form-controls{width: 90%;}
+  .remaining_team h6{margin-bottom: 0;}
+.remaining_team p{font-weight: 600;}
+.remaining_lives, .life_screen {
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.remaining_lives img, .life_screen img {margin-right:4px;width: 20px;}
+.remaining_lives img:last-child, .life_screen img:last-child {margin-right:0px;}
+.lose_life{
+        -webkit-animation:  fade-in-bck 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation:  fade-in-bck 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.remaining_team h6{
+        -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.remaining_lives img.remaining_life, .life_screen img.remaining_life{ 
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+@-webkit-keyframes fade-in-bck {
+        0% {
+          -webkit-transform: translateZ(80px);
+                  transform: translateZ(80px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in-bck {
+        0% {
+          -webkit-transform: translateZ(80px);
+                  transform: translateZ(80px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      
+
+#incorrect_ans img{margin-right: 30px;}
+#incorrect_ans img:last-child {margin-right: 0px;}
+#incorrect_ans .remaining_lives{width: auto; justify-content: center;}
+#incorrect_ans .remaining_lives img{width: 90px;}
+#incorrect_ans h3{letter-spacing: 1px;}
+.hint_view .contact_btn {min-width: 15px;margin-left: 8px;padding: 4px 7px;}
+.hint_view {margin: auto;}
+.clue_block h2, .clue_block p{ color: #fff; text-align: center;}
+.clue_block p{font-size: 20px;}
+.rht_sidebar .remaining_lives .used_life {
+        opacity: 0.5;
+    }

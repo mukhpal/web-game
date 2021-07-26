@@ -1,0 +1,30 @@
+.mansion_map {position: absolute;z-index: 11;padding: 3% 10%; }
+.map_view{transform: rotate(-3deg); -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg);}
+.access_button a{max-width: 150px;float: right;margin-top: -25px; position: relative;z-index: 11;margin-right: 25px; font-size: 11px;
+    padding-left: 10px; padding-right: 10px; }
+.access_button a:last-child{margin-right: 0;}
+.seceret_corridor{
+    width: 100%;
+    color: #fff;
+    background: url(../images/gallery/model_good.png) no-repeat top !important;
+    background-size: 100% 100%;
+    padding: 60px 40px 20px;
+    border:0;
+}
+.seceret_corridor p, .seceret_corridor ul li, .seceret_corridor ul, .seceret_corridor ol {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+}
+.actually_happened.seceret_corridor {
+    height: 500px;
+}
+.commited_crime {
+    height: 330px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.mansion_map a.contact_btn {
+    font-size: 10px;
+}

@@ -1,0 +1,1 @@
+<embed src="{{ asset('assets/content/Tutorial.pdf') }}?#zoom=150" type="application/pdf" title="Tutorial" width="100%" height="100%" />

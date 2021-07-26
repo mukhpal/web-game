@@ -1,0 +1,145 @@
+@import '../../lib/slick/css/slick.css';
+@import 'common.css';
+@import 'splash-screen.css';
+@import 'file-close.css';
+@import 'navigation.css';
+@import 'game-overview.css';
+@import 'evidence.css';
+@import 'newspaper-clips.css';
+@import 'party-photos.css';
+@import 'suspects.css';
+@import 'dmv.css';
+@import 'dmv_login.css';
+@import 'security.css';
+@import 'mansion.css';
+@import 'result.css'; 
+@import 'loader.css'; 
+@import '../../lib/bootstrap/css/bootstrap-select.min.css'; 
+/* <link rel="stylesheet" href=""> */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Otto';
+    src: url('../fonts/Otto.woff2') format('woff2'),
+        url('../fonts/Otto.woff') format('woff'),
+        url('../fonts/Otto.svg#Otto') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+::-webkit-scrollbar {
+    background-color:transparent;
+    width:5px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:transparent
+} 
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color:#C0902F;
+    border-radius:16px; 
+} 
+
+/****modal***/
+.modal-backdrop.show{
+    z-index: -1;
+}
+
+/**popup banner**/
+.jconfirm .jconfirm-box {
+    background: url(../images/gallery/model_good.png) no-repeat center !important;
+    background-size: 100% 100% !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 40px 25px !important;
+    color: #000;
+    font-weight: 600;
+    text-align: center !important;
+    margin: auto !important;
+}
+
+.jconfirm .jconfirm-box .jconfirm-buttons{padding-bottom: 0 !important;}
+.jconfirm .jconfirm-box .jconfirm-buttons button.btn-default {
+    background-color: #044874 !important;
+    color: #fff !important;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: url(../images/gallery/btn_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 80px;
+}
+.jconfirm.jconfirm-white .jconfirm-bg, .jconfirm.jconfirm-light .jconfirm-bg{
+    opacity: 0.7 !important;
+    background-color: rgba(0,0,0,.9) !important;
+}
+.jconfirm-title{display: none !important;}
+.jconfirm-buttons {
+    float: none !important;
+}
+.jconfirm .jconfirm-box .jconfirm-buttons button:first-child {
+    margin-right: 15px;
+}
+.jconfirm .jconfirm-box .jconfirm-buttons button:last-child {
+    margin-right: 0px;
+}
+.bootstrap-select span.filter-option.pull-left {
+    font-size: 13px;
+    position: relative;
+    top: 4px;
+}
+/*watermark*/
+.ocf_watermark {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.ocf_watermark img {
+    max-width: 150px;
+    width: 100%;
+    padding-top: 27px;
+}
+
+.ocf_watermark:before {
+    position: absolute;
+    background: url(../images/watermark_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 50px 100%;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+/**timer**/
+#crime_investigation .timer_mem, #crime_investigation #quiz_timing {
+    bottom: 23%;
+    right: 1%;
+    z-index: 11;
+}
+
+#crime_investigation #countdowntimer, #crime_investigation #countdowntimerques, #crime_investigation #beforegamestart, #crime_investigation #timer{
+    color: #ffffff;
+    background-color: #366b33;
+}
+
+#crime_investigation .timer_mem svg circle, #crime_investigation  #quiz_timing svg circle{stroke: #c0902f}
